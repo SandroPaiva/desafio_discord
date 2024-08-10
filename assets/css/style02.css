@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-image: url('/assets/img/fundo_topo.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 24px 20px 24px;
+
+
+}
+
+button {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: center;
+    border: none;
+    height: 44px;
+    border-radius: 28px;
+
+}
+
+.head01 {
+    width: 757px;
+    gap: 16px;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    margin: auto;
+    padding: 10px 0 20px 0;
+
+
+}
+
+@media screen and (max-width: 450px) {
+    .head01 {
+        width: 100%;
+        display: flex;
+
+        flex-direction: column;
+        gap: 15px !important;
+    }
+
+    .h_padrao {
+        font-size: 32px !important;
+        text-align: left !important;
+        line-height: 32px !important;
+    }
+
+    button {
+        margin: auto;
+        width: 100% !important;
+
+
+    }
+
+    .sec01_01>.item01,
+    .sec01_02>.item02,
+    .sec01_03>.item03 {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 1fr !important;
+        margin: auto !important;
+        width: 100% !important;
+        padding: 20px 24px 20px 24px !important;
+    }
+
+    #img_item01,
+    #img_item02,
+    #img_item03 {
+        width: 370px !important;
+    }
+
+    #img_item01 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #txt_item01 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    /*#img_item02{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #txt_item02{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #img_item03{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #txt_item03{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }*/
+
+
+}
+
+.h_padrao {
+    font-family: Luckiest Guy;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: center;
+
+}
+
+.h2_padrao {
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 54.47px;
+    text-align: left;
+}
+
+.p_padrao {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+
+
+}
+
+#h_01 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: #fff;
+}
+
+#p_01 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+#btn_01 {
+    width: 205px;
+    background-color: #fff;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: end;
+
+}
+
+#btn_02 {
+    width: 281px;
+    color: #fff;
+    background-color: #000;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: self-start;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr, 1fr, 1fr;
+    margin: auto;
+    /*width: 971px;*/
+    gap: 20px;
+    padding: 20px 0 20px 0;
+    justify-content: center;
+}
+
+#img_item01>img,
+#img_item02>img,
+#img_item03>img {
+    max-width: 100%;
+}
+
+#img_item01 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    width: 607px;
+    justify-self:flex-end;
+}
+
+#txt_item01 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    width: 348px;
+    justify-self:flex-start;
+
+}
+
+#img_item02 {
+    grid-column: 3/5;
+    grid-row: 2/3;
+    width: 607px;
+    justify-self:flex-start;
+}
+
+#txt_item02 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 348px;
+    justify-self:flex-end;
+}
+
+#img_item03 {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    width: 607px;
+    justify-self:flex-end;
+}
+
+#txt_item03 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+    width: 348px;
+    justify-self:flex-start;
+}
+
+.section02,
+.sec01_02 {
+    background-color: #F6F6F6;
+    padding: 10px 0 10px 0;
+}
+
+.section02>#sec02 {
+    width: 805px;
+    margin: auto;
+}
+
+#p_05 {
+    text-align: center;
+
+}
+
+.footer01 {
+    background: #23272A;
+    padding: 35px 0px 36px 0px;
+    text-align: center;
+
+
+}
